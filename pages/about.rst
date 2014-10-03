@@ -1,9 +1,8 @@
 ---
 layout: page.html
+title: About
 ---
-
-About Me
-########
+Hi, I'm Chris.
 
 I'm a programmer working out of Lawrence, KS, USA.
 

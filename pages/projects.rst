@@ -3,9 +3,6 @@ layout: page.html
 title: Projects
 ---
 
-Projects
-========
-
 Open Source Libraries
 ---------------------
 
