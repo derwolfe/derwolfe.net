@@ -14,9 +14,10 @@
             {% if site.subtitle %}<h2 id="subtitle">{{ site.subtitle }}</h2>{% endif %}
 
             <ul id="nav">
-                <li><a href="{{ get_url() }}">Blog</a></li>
-                <li><a href="{{ get_url('archives/') }}">Archives</a></li>
-                <li><a href="{{ get_url('feed.xml') }}">Feed</a></li>
+                <li><a href="{{ get_url() }}">Writing</a></li>
+                <li><a href="{{ get_url('archives') }}">Archives</a></li>
+		<li><a href="{{ get_url('pages/projects.html') }}">Projects</a></li>
+		<li><a href="{{ get_url('pages/about.html') }}">About</a></li>
             </ul>
 
             <div id="footer">
