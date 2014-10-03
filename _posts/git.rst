@@ -9,13 +9,6 @@ My Git Workflow
 
 Git is excellent. It keeps me sane.
 -----------------------------------
-
-.. code:: python
-
-    def who_am_i():
-        return u"chris"
-
-
 Over the past few years, I've noticed that not all uses of Git are alike. There seems to be a definite correct way to use Git that results in a repository being easy to understand and navigate.
 
 Personally, I want my repositories to read like a story. I want to be able to look over a commit history and understand why each merge was made instead of just what the merge was.
@@ -50,8 +43,8 @@ This single commit should contain a subject that states the point of the branch.
 
 An example commit message would be:
 
-.. code:: sh
-
+.. code:: 
+    
     Consolidate search string creation into single module
 
     Instead of having multiple search objects that take either
@@ -67,7 +60,7 @@ The idea in writing commit messages is to preserve the reasons for having change
 
 Writing a commit consisting only of
 
-.. code:: sh
+.. code::
 
     Merged branch 'fix stuff'
 
@@ -115,7 +108,6 @@ This makes it easy for other users of the repository to track down significant c
 
 Update 10-02-2014
 -----------------
-
 After a bit more thought, trial and error, and experimentation. I've noticed there is no real need to delete feature branches.
 If they have been squashed in, it can be helpful to be able to look through the development process again.
 But - this is purely a personal decision. As long as the changesets remain small enough for a group of developers to understand, then this process (squashin in features) will work.
