@@ -3,10 +3,6 @@ layout: post.html
 title: My git workflow
 date: 2014-02-28
 ---
-
-My Git Workflow
-###############
-
 Git is excellent. It keeps me sane.
 -----------------------------------
 Over the past few years, I've noticed that not all uses of Git are alike. There seems to be a definite correct way to use Git that results in a repository being easy to understand and navigate.
