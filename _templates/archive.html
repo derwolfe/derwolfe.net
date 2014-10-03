@@ -3,14 +3,6 @@
 
 {% set title = archive.year ~ ' : Archives : Blog' %}
 
-{% block breadcrumbs %}
-    <ul id="breadcrumbs">
-        <li><a href="{{ get_url() }}">Blog</a></li>
-        <li><a href="{{ get_url('archives/') }}">Archives</a></li>
-        <li>{{ archive.year }}</li>
-    </ul>
-{% endblock %}
-
 {% block content %}
     <dl class="archives">
         {% for month in archive.months|values %}

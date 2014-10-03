@@ -3,14 +3,6 @@
 
 {% set title = tag.name ~ ' : Archives : Blog' %}
 
-{% block breadcrumbs %}
-    <ul id="breadcrumbs">
-        <li><a href="{{ get_url() }}">Blog</a></li>
-        <li><a href="{{ get_url('archives/') }}">Archives</a></li>
-        <li>{{ tag.name }}</li>
-    </ul>
-{% endblock %}
-
 {% block content %}
     {% for archive in tag.archives|values %}
         <dl class="archives">
