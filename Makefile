@@ -5,3 +5,6 @@ clean:
 
 build: clean
 	mynt gen _built
+
+serve:
+	twistd -n web --path ./_built/
