@@ -39,8 +39,8 @@ This single commit should contain a subject that states the point of the branch.
 
 An example commit message would be:
 
-.. code:: 
-    
+.. code::
+
     Consolidate search string creation into single module
 
     Instead of having multiple search objects that take either
@@ -77,30 +77,28 @@ This makes it easy for other users of the repository to track down significant c
 5. Once merged, delete feature branches
 ---------------------------------------
 
-.. admonition:: cancelled
-	:class: strike
+Now that you have merged the branch and with it written an excellent and highly descriptive commit message, the commit history saved in the feature branch no longer serves any purpose. All it can do at this point is pollute your workspace with old branch names and cause confusion while working on new features.
 
-		Now that you have merged the branch and with it written an excellent and highly descriptive commit message, the commit history saved in the feature branch no longer serves any purpose. All it can do at this point is pollute your workspace with old branch names and cause confusion while working on new features.
+The solution: delete the feature branch once it has been merged.
 
-		The solution: delete the feature branch once it has been merged.
+There are a few ways to delete remote branches and tags. I use:
 
-		There are a few ways to delete remote branches and tags. I use:
+.. code:: sh
 
-		.. code:: sh
+	  git push origin :refs/tags/<tag-name>
 
-			  git push origin :refs/tags/<tag-name>
+	  # delete remote branches
+	  git push origin :<feature-branch1> :<feature-branch2>
 
-			  # delete remote branches
-			  git push origin :<feature-branch1> :<feature-branch2>
+	  To delete from the local repository after the merge:
 
-			  To delete from the local repository after the merge:
+.. code:: sh
 
-		.. code:: sh
+	  # make sure you have actually branched your branch before doing this,
+	  # git branch -D will force delete the branch
+	  # git branch --merged won't show squashed merges!
+	  git branch -D <feature-branch>
 
-			  # make sure you have actually branched your branch before doing this,
-			  # git branch -D will force delete the branch
-			  # git branch --merged won't show squashed merges!
-			  git branch -D <feature-branch>
 
 Update 10-02-2014
 -----------------
