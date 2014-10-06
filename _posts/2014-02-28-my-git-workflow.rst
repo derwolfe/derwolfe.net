@@ -85,18 +85,17 @@ There are a few ways to delete remote branches and tags. I use:
 
 .. code:: sh
 
+	  # delete remote tags
 	  git push origin :refs/tags/<tag-name>
 
 	  # delete remote branches
 	  git push origin :<feature-branch1> :<feature-branch2>
 
-	  To delete from the local repository after the merge:
+
+To delete from the local repository after the merge:
 
 .. code:: sh
 
-	  # make sure you have actually branched your branch before doing this,
-	  # git branch -D will force delete the branch
-	  # git branch --merged won't show squashed merges!
 	  git branch -D <feature-branch>
 
 
