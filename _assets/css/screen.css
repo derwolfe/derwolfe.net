@@ -250,6 +250,11 @@ sup {
     position: center;
 }
 
+#content {
+  max-width: 800px;
+  margin: auto;
+}
+
 #content > :first-child {
   margin-top: 0px;
 }
