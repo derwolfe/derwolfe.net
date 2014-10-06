@@ -2,7 +2,6 @@
 {% block title %}Writing{% endblock %}
 {% block content %}
         <section>
-            <h2>Writing</h2>
             {% for post in posts %}
                 {% if 'hold' not in post.tags %}
                     <article>
