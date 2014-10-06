@@ -1,4 +1,4 @@
-{% extends 'layout.html' %}
+{% extends "layout.html" %}
 
 
 {% set title = item.title ~ ' : Blog' %}
@@ -6,7 +6,7 @@
 {% block content %}
     <div class="post">
         <h1 class="post-title">{{ item.title }}</h1>
-        <h2 class="post-meta">{{ item.date }}        
+        <h2 class="post-meta">{{ item.date }}
         {{ item.content }}
     </div>
 {% endblock %}
