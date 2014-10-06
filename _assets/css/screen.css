@@ -450,3 +450,8 @@ div.code > div {
     color:#fff;
     text-decoration:none;
 }
+
+/* article link */
+.article-link {
+    display: inline;
+}

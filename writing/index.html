@@ -1,16 +1,14 @@
 {% extends "layout.html" %}
 {% block title %}Writing{% endblock %}
 {% block content %}
-        <section>
-            {% for post in posts %}
-                {% if 'hold' not in post.tags %}
-                    <article>
-                        <h3><a href="{{ get_url(post.url) }}">{{ post.title }}</a></h3>
-                        <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time>
-                        <p>{{ post.content | striptags | truncate(200) }}<a href="{{ get_url(post.url) }}" class="more-link">Read more &rarr;</a></p>
-                    </article>
-                {% endif %}
-            {% endfor %}
-        </section>
-    </section>
+<section>
+  {% for post in posts %}
+  <article>
+    <span class="post-link">
+      <h3><a href="{{ get_url(post.url) }}">{{ post.title }}</a></h3>
+      <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time>
+    </span>
+  </article>
+  {% endfor %}
+</section>
 {% endblock %}
