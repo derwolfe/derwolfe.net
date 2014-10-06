@@ -1,11 +1,6 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <div class="post-list">
-        {% for post in posts %}
-            <h1 class="post-title"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></h1>
-            <h2 class="post-meta">{{ post.date }}</h2>
-	    <div class="post-snippet">{{ post.content | striptags | truncate(200) }}</span>
-        {% endfor %}
-    </div>
+<div class="monster">I'm Chris Wolfe and this is my site</div>
+<div class="monster-child">I like working with unix-y tools, writing software, and learning about software-development.</div>
 {% endblock %}
