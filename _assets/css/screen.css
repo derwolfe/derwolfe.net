@@ -43,11 +43,8 @@ table {
 }
 
 body {
-  background-color: #272727;
-  background-image: url("../images/bg.png");
-  background-position: left top;
-  background-repeat: repeat;
-  color: #d9d9d9;
+  color: #272727;
+  background-color: #d9d9d9;
   font-family: "Ubuntu", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -60,7 +57,6 @@ blockquote, dl, ol, p, pre, table, ul {
 blockquote {
   overflow: hidden;
   padding: 0px 18px;
-  background-color: #1f1f1f;
 }
 
 dl.horizontal > dd, .archives > dd, .archives-records > dd {
@@ -78,8 +74,7 @@ dl.horizontal > dt, .archives > dt, .archives-records > dt {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: white;
-  font-style: italic;
+  color: purple;
   font-weight: normal;
 }
 
@@ -114,35 +109,13 @@ h6 {
 li {
   position: relative;
 }
-ol > li:before, ul > li:before {
-  position: absolute;
-  color: #e6db74;
-}
-ol > li {
-  left: 22px;
-  margin-right: 22px;
-  counter-increment: item;
-}
-ol > li:before {
-  left: -22px;
-  width: 17px;
-  text-align: right;
-  content: counter(item,decimal) ".";
-}
-ul > li {
-  left: 12px;
-  margin-right: 12px;
-}
-ul > li:before {
-  left: -12px;
-  content: "\2022";
-}
-ul.unstyled > li, #nav > li, #breadcrumbs > li {
+
+ul.unstyled > li {
   position: static;
   left: auto;
   margin-right: 0px;
 }
-ul.unstyled > li:before, #nav > li:before, #breadcrumbs > li:before {
+ul.unstyled > li:before {
   position: static;
   left: auto;
   content: none;
@@ -153,10 +126,7 @@ ol, ul {
   list-style-position: inside;
   list-style-type: none;
 }
-ol ol, ol ul, ul ol, ul ul {
-  margin: 0px;
-  margin-left: 20px;
-}
+
 
 ol {
   counter-reset: item;
@@ -205,11 +175,11 @@ a {
   -ms-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s;
-  color: #a6ca48;
+  color: purple;
   text-decoration: none;
 }
 a:hover {
-  color: #e6db74;
+  color: blue;
 }
 
 code {
@@ -260,17 +230,8 @@ sup {
 }
 
 #container {
-  margin-top: 18px;
-  width: 960px;
-}
-
-#sidebar {
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  padding: 0px 18px;
-  width: 255px;
+  margin: auto;
+  width: 850px;
 }
 
 #title {
@@ -286,37 +247,16 @@ sup {
 }
 
 #footer {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  padding: 0px 18px;
-  width: 255px;
+    position: center;
 }
 
-#breadcrumbs {
-  position: fixed;
-  top: 18px;
-  left: 309px;
-  margin: 0px;
-  padding: 9px;
-  width: 633px;
-}
-
-#content {
-  margin: 18px 0px;
-  margin-left: 309px;
-  width: 651px;
-}
 #content > :first-child {
   margin-top: 0px;
 }
+
 #content > :last-child {
   margin-bottom: 0px;
 }
-#breadcrumbs + #content {
-  margin-top: 72px;
-}
-
 .post-list > .post-title, .post-list > .post-meta {
   padding: 9px;
 }
@@ -326,10 +266,6 @@ sup {
 }
 .post-list > .post-meta {
   padding-top: 0px;
-}
-
-.post-title, .post-meta {
-  padding: 12px;
 }
 
 .post-title {
@@ -368,14 +304,6 @@ div.code > div {
   padding: 0px;
 }
 
-#sidebar {
-  background-color: #1a1a1a;
-  background-image: url("../images/sbg.png");
-  background-position: left top;
-  background-repeat: repeat;
-  font-style: italic;
-}
-
 #title {
   font-family: "Ubuntu Mono", sans-serif;
   font-size: 36px;
@@ -404,26 +332,6 @@ div.code > div {
   text-transform: uppercase;
 }
 
-#breadcrumbs {
-  background-color: #1a1a1a;
-  color: #a6a6a6;
-  font-family: "Ubuntu Mono", sans-serif;
-  font-style: italic;
-}
-#breadcrumbs > li {
-  float: left;
-}
-#breadcrumbs > li:after {
-  padding: 0px 6px;
-  color: #d9d9d9;
-  font-style: normal;
-  content: "\203A";
-}
-#breadcrumbs > li:last-child:after {
-  padding: 0px;
-  content: none;
-}
-
 .post-list > .post-title {
   font-size: 16px;
 }
@@ -435,10 +343,6 @@ div.code > div {
 }
 .post-list > .post-meta > a:hover {
   color: #a6ca48;
-}
-
-.post-title, .post-meta {
-  background-color: #1f1f1f;
 }
 
 .post-title {
@@ -516,4 +420,33 @@ div.code > div {
 .archives-post-tags > span {
   position: relative;
   top: -1px;
+}
+
+/* nav bar */
+#top-nav {
+    background-color:#333;
+    margin-bottom:24px;
+    min-width:800px;
+    padding:7px;
+    margin-top: 24px;
+}
+
+#top-nav ul {
+    display:inline;
+    padding:7px;
+}
+
+#top-nav li {
+    color:#eee;
+    display:inline;
+    list-style-type:none;
+}
+
+#top-nav li:not(:last-child) {
+    margin-right:30px;
+}
+
+#top-nav a {
+    color:#fff;
+    text-decoration:none;
 }

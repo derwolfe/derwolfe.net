@@ -13,28 +13,28 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic|Ubuntu+Mono:400,700,400italic,700italic" type="text/css">
   <link rel="stylesheet" href="{{ get_asset('css/screen.css') }}" type="text/css">
   <link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}" type="text/css">
-  <link rel="stylesheet" href="{{ get_asset('css/normalize.css') }}" type="text/css">
   <title>{{ site.title }}</title>
 </head>
 
 <body>
-    <div id="container">
-        <div id="sidebar">
-            <ul id="nav">
-                <li><a href="/">Home</a>
-                <li><a href="{{ get_url('writing') }}">Writing</a></li>
-		<li><a href="{{ get_url('about') }}">About</a></li>
-		<li><a href="{{ get_url('colophon') }}">Colophon</a>
-            </ul>
-
-            <div id="footer">
-                <p>© 2013 to {{ none|date('%Y') }} {{ site.author }}, All rights reserved.</p>
-            </div>
-        </div>
-
-        <div id="content">
-            {% block content %}{% endblock %}
-        </div>
+  <div id="container">
+    <div id="top-nav">
+      <ul>
+        <li><a href="/">Home</a>
+        <li><a href="{{ get_url('writing') }}">Writing</a></li>
+	<li><a href="{{ get_url('about') }}">About</a></li>
+	<li><a href="{{ get_url('colophon') }}">Colophon</a>
+      </ul>
     </div>
+
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
+
+    <div id="footer">
+      <p>© 2013 to {{ none|date('%Y') }} {{ site.author }}, All rights reserved.</p>
+    </div>
+
+  </div>
 </body>
 </html>
