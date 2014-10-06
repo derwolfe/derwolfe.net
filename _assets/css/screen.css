@@ -176,7 +176,7 @@ a {
   -o-transition: color 0.2s;
   transition: color 0.2s;
   color: purple;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: blue;
@@ -459,6 +459,16 @@ div.code > div {
 }
 
 /* article link */
-.article-link {
-    display: inline;
+#articles-list {
+    width: 700px;
+    margin: auto;
+}
+
+.article-name {
+    font-size: 16px;
+}
+
+.article-date {
+    font-size: 16px;
+    font-style: italic;
 }
