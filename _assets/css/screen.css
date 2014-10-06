@@ -335,6 +335,8 @@ div.code > div {
   font-size: 11px;
   font-style: normal;
   text-transform: uppercase;
+  margin-top: 24px;
+  border-top: 1px dotted gray;
 }
 
 .post-list > .post-title {
