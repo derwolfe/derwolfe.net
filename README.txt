@@ -1,5 +1,4 @@
 Blog
 ====
 
-Settled on mynt.
-
+Mynty fresh choices.
