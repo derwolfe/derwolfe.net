@@ -3,9 +3,9 @@ layout: post.html
 title: My git workflow
 date: 2014-02-28
 ---
-Git is excellent. It keeps me sane.
+git is excellent. It keeps me sane.
 -----------------------------------
-Over the past few years, I've noticed that not all uses of Git are alike. There seems to be a definite correct way to use Git that results in a repository being easy to understand and navigate.
+Over the past few years, I've noticed that not all uses of git are alike. There seems to be a definite correct way to use git that results in a repository being easy to understand and navigate.
 
 Personally, I want my repositories to read like a story. I want to be able to look over a commit history and understand why each merge was made instead of just what the merge was.
 
@@ -13,7 +13,7 @@ Here are a few rules that I like to follow and why I find them beneficial.
 
 1. Use feature branches all the time
 ------------------------------------
-Branching in Git is cheap, easy, fun, and safe. It allows a software developer to create a sandbox in which all experimental changes can be safely tried.
+Branching in git is cheap, easy, fun, and safe. It allows a software developer to create a sandbox in which all experimental changes can be safely tried.
 
 While working in an experimental branch, one can branch into even further experimental sub-branches. Think master -> feature -> sub-feature -> implementation_test1.
 
@@ -64,11 +64,11 @@ doesn't tell another developer anything about **why** changes were made.
 
 3. Newly merged feature branches require tests
 ----------------------------------------------
-This is not really Git related, but bears mentioning. Writing a new feature should result in the ability to write or improve on the current battery of tests. There are occasions where new features can result in no tests, but most of the time a change in functionality should be testable. Doing so makes it extremely easy to check for regressions and helps other developers see how the newly written code is intended to be used.
+This is not really git related, but bears mentioning. Writing a new feature should result in the ability to write or improve on the current battery of tests. There are occasions where new features can result in no tests, but most of the time a change in functionality should be testable. Doing so makes it extremely easy to check for regressions and helps other developers see how the newly written code is intended to be used.
 
 4. Use tags
 -----------
-Git tags provide the ability to highlight certain commits as having significance. Typically, I only tag my master branch with version releases, e.g. 1.2.
+git tags provide the ability to highlight certain commits as having significance. Typically, I only tag my master branch with version releases, e.g. 1.2.
 
 This makes it easy for other users of the repository to track down significant changes.
 

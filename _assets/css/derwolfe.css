@@ -1,0 +1,50 @@
+.container {
+    margin-top: 50px;
+}
+
+#nav {
+    margin-top: 30px;
+}
+
+#nav ul li {
+    display: inline;
+    margin: 0 20px 0 0;
+    margin-bottom: 130px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
+
+/* content styles, so headers etc are not hilariously large */
+.post h1 {
+    font-size: 24px;
+}
+.post h2 {
+    font-size: 18px;
+}
+.post h3 {
+    font-size:14px;
+}
+
+.post-title {
+    font-size: 1.4em;
+    color: #2C8437;
+    font-style: bold;
+}
+
+.post-meta {
+    color: darkgrey;
+}
+
+.code {
+    padding-left: 15px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
