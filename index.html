@@ -1,6 +1,16 @@
 {% extends "layout.html" %}
-
+{% block title %}Writing{% endblock %}
 {% block content %}
-<div class="monster">I'm Chris Wolfe and this is my site</div>
-<div class="monster-child">I like working with unix-y tools, writing software, and learning about software-development.</div>
+<section>
+  <div id="articles-list">
+    {% for post in posts %}
+    <article>
+      <div class="row">
+      <span class="article-date"><time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time></span> - <span class="article-name"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></span>
+      </div>
+  </div>
+  </article>
+  {% endfor %}
+</div>
+</section>
 {% endblock %}

@@ -3,14 +3,10 @@
 {% set title = item.title ~ ' : Blog' %}
 
 {% block content %}
+    <div class="post-title">{{ item.title }}</div>
+    <div class="post-meta">{{ item.date }}</div>
     <div class="post">
       <div class="row">
-	<div class="ten columns">
-	  <div class="post-title">{{ item.title }}</div>
-	</div>
-	<div class="four columns">
-	  <div class="post-meta">{{ item.date }}</div>
-	</div>
       </div>
       <hr />
       <div class="row">

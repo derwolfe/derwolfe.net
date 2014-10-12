@@ -10,6 +10,7 @@
     display: inline;
     margin: 0 20px 0 0;
     margin-bottom: 130px;
+    font-size: 1.2em;
 }
 
 #nav a {
@@ -35,6 +36,11 @@
     font-size: 1.4em;
     color: #2C8437;
     font-style: bold;
+}
+
+.article-name {
+    font-size: 18px;
+    color: #2C8437;
 }
 
 .post-meta {
