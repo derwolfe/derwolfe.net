@@ -4,13 +4,12 @@
 <section>
   <div id="articles-list">
     {% for post in posts %}
-    <article>
-      <div class="row">
-      <span class="article-date"><time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time></span> - <span class="article-name"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></span>
-      </div>
-  </div>
-  </article>
+    <div class="row">
+      <article>
+	<span class="article-date"><time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time></span> - <span class="article-name"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></span>
+      </article>
+    </div>
   {% endfor %}
-</div>
+  </div>
 </section>
 {% endblock %}

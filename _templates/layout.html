@@ -5,64 +5,64 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-	     ================================================== -->
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <!-- Basic Page Needs
+       ================================================== -->
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-	<!-- Mobile Specific Metas
-	     ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Mobile Specific Metas
+       ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-	     ================================================== -->
-	<link rel="stylesheet" href="{{ get_asset('css/skeleton/stylesheets/base.css') }}">
-	<link rel="stylesheet" href="{{ get_asset('css/skeleton/stylesheets/skeleton.css') }}">
-	<link rel="stylesheet" href="{{ get_asset('css/skeleton/stylesheets/layout.css') }}">
-	<link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}">
-	<link rel="stylesheet" href="{{ get_asset('css/derwolfe.css') }}">
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <!-- CSS
+       ================================================== -->
+  <link rel="stylesheet" href="{{ get_asset('css/skeleton/stylesheets/base.css') }}">
+  <link rel="stylesheet" href="{{ get_asset('css/skeleton/stylesheets/skeleton.css') }}">
+  <link rel="stylesheet" href="{{ get_asset('css/skeleton/stylesheets/layout.css') }}">
+  <link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}">
+  <link rel="stylesheet" href="{{ get_asset('css/derwolfe.css') }}">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
 
-	<!-- fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <!-- fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 
-	<!-- Favicons
-	================================================== -->
-	<!-- <link rel="shortcut icon" href="{{ get_asset('images/favicon.ico') }}" type="image/x-icon"> -->
+  <!-- Favicons
+       ================================================== -->
+  <!-- <link rel="shortcut icon" href="{{ get_asset('images/favicon.ico') }}" type="image/x-icon"> -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-	{% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
-	{% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
-
-	<link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">
-	<title>{{ site.title }}</title>
+  {% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
+  {% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
+  <link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">
+  <title>{{ site.title }}</title>
 </head>
 
 <body>
   <div class="container">
-    <div id="nav" class="row">
+    <div class="five columns">
+      <span id="logo">Chris Wolfe</span>
+    </div>
+    <div class="eleven columns" id="nav">
       <nav>
-	<span id="logo">Chris Wolfe</span>
 	<ul>
 	  <li><a href="/">Blog</a></li>
-	  <li><a href="{{ get_url('about') }}">About</a></li>
 	  <li><a href="{{ get_url('colophon') }}">Colophon</a>
 	  <li><a href="{{ get_url('license') }}">License</a>
 	</ul>
       </nav>
     </div>
-    <div class="row">
-      <div class="ten columns content">
-	{% block content %}{% endblock %}
-      </div>
+
+    <div class="ten columns">
+      <hr id="header-border" />
+
+      {% block content %}{% endblock %}
     </div>
 
   </div>
-
 </body>
 </html>
