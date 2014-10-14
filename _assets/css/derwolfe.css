@@ -44,7 +44,6 @@
 }
 
 .code {
-    padding-left: 15px;
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
     margin-bottom: 15px;
@@ -55,6 +54,14 @@
     font-size: 30px;
     font-weight: 700;
     color: #08457E;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo a:hover {
+    color: grey;
 }
 
 #header-border {
