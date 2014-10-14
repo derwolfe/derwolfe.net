@@ -2,14 +2,9 @@
     margin-top: 50px;
 }
 
-#nav {
-    margin-top: 30px;
-}
-
 #nav ul li {
     display: inline;
     margin: 0 20px 0 0;
-    margin-bottom: 130px;
     font-size: 1.2em;
 }
 
@@ -33,18 +28,19 @@
 }
 
 .post-title {
-    font-size: 1.4em;
-    color: #2C8437;
-    font-style: bold;
-}
-
-.article-name {
-    font-size: 18px;
+    font-size: 24px;
     color: #2C8437;
 }
 
 .post-meta {
-    color: darkgrey;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.article-name {
+    font-size: 16px;
+    color: #2C8437;
 }
 
 .code {
@@ -57,5 +53,11 @@
 
 #logo {
     font-size: 30px;
-    font-style: bold;
+    font-weight: 700;
+    color: #08457E;
+}
+
+#header-border {
+    height: 5px;
+    background-color: black;
 }
