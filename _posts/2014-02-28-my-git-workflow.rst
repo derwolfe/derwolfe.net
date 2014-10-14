@@ -72,8 +72,6 @@ git tags provide the ability to highlight certain commits as having significance
 
 This makes it easy for other users of the repository to track down significant changes.
 
-
-
 5. Once merged, delete feature branches
 ---------------------------------------
 
@@ -89,7 +87,7 @@ There are a few ways to delete remote branches and tags. I use:
 	  git push origin :refs/tags/<tag-name>
 
 	  # delete remote branches
-	  git push origin :<feature-branch1> :<feature-branch2>
+	  git push origin :<feature-branch>
 
 
 To delete from the local repository after the merge:
@@ -97,10 +95,3 @@ To delete from the local repository after the merge:
 .. code:: sh
 
 	  git branch -D <feature-branch>
-
-
-Update 10-02-2014
------------------
-After a bit more thought, trial and error, and experimentation. I've noticed there is no real need to delete feature branches.
-If they have been squashed in, it can be helpful to be able to look through the development process again.
-But - this is purely a personal decision. As long as the changesets remain small enough for a group of developers to understand, then this process (squashin in features) will work.
