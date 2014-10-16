@@ -646,6 +646,12 @@
     margin-top: 50px;
 }
 
+.container img {
+    width: 90%;
+    height: auto;
+    min-width: 200px;
+}
+
 #nav ul li {
     display: inline;
     margin: 0 20px 0 0;
@@ -712,5 +718,3 @@
     height: 5px;
     background-color: black;
 }
-
-
