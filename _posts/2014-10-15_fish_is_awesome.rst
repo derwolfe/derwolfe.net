@@ -38,7 +38,7 @@ For example, here is my fish.config file in which I've setup pyenv, homebrew and
 With fish, the convention is only to save functions that will *always* be evaluated on shell startup in the main config.fish file.
 Another wonderful thing is that functions are saved and created inside of a specific directory.
 There is no convention here, if you would like your functions to be picked up, create them inside of ~/.config/fish/functions.
-Fish also has its own function editor ``funced`` that allows you to edit functions direcly from the shell itself.
-All a user has to do to edit a function is type ``funced functionname`` and the function will be opened.
+Fish also has its own function editor *funced* that allows you to edit functions direcly from the shell itself.
+All a user has to do to edit a function is type *funced functionname* and the function will be opened.
 
 .. image:: /assets/images/funced.png
