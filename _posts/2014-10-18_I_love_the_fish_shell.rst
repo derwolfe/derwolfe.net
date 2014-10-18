@@ -1,11 +1,10 @@
 ---
 layout: post.html
 title: I love the fish shell
-date: 2014-10-15
+date: 2014-10-18
 ---
 I have been using the fish shell for the past six months and have been loving every minute of it.
 I wanted to tell you about it because it is vastly simpler to use than I ever felt both bash and zsh ever were.
-But, be advised, while I'm comparing these shells I only have had a *working* knowledge of how to be productive using bash and zsh.
 
 Why do I use my shell?
 ----------------------
