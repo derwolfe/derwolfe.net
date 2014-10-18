@@ -18,14 +18,14 @@ What do I want?
 ---------------
 Autocomplete should work excellently.
 The shell should feel quick and responsive.
-The default configuration language for my shell to be simple and obvious.
+The default configuration language for my shell should be simple and obvious.
 Global variables should be used sparingly if at all.
 Reading code written for the shell should not make me want to cry.
 
 Why do I like fish?
 -------------------
 fish has some excellent defaults that feel natural from the start.
-fish has a sane and simple configuration language in which paths can be set extremely easily.
+fish uses a sane and simple configuration language in which paths can be set easily.
 For example, here is my fish.config file in which I've setup pyenv, homebrew and the default paths.
 
 .. code:: sh
