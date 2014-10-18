@@ -570,78 +570,6 @@
       height: 0;
     }
 
-/* self defined */
-.container {
-    margin-top: 50px;
-}
-
-#nav ul li {
-    display: inline;
-    margin: 0 20px 0 0;
-    font-size: 1.2em;
-}
-
-#nav a {
-    text-decoration: none;
-}
-
-#nav a:hover {
-    text-decoration: underline;
-}
-
-/* content styles, so headers etc are not hilariously large */
-.post h1 {
-    font-size: 24px;
-}
-.post h2 {
-    font-size: 18px;
-}
-.post h3 {
-    font-size:14px;
-}
-
-.post-title {
-    font-size: 24px;
-    color: #2C8437;
-}
-
-.post-meta {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-size: 18px;
-}
-
-.article-name {
-    font-size: 16px;
-    color: #2C8437;
-}
-
-.code {
-    font-family: "Source Code Pro", monospace;
-    font-size: 13px;
-    margin-bottom: 15px;
-    margin-top: 5px;
-}
-
-#logo {
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #08457E;
-}
-
-#logo a {
-    text-decoration: none;
-}
-
-#logo a:hover {
-    color: grey;
-}
-
-#header-border {
-    height: 5px;
-    background-color: black;
-}
-
 /* pygments */
 .hll { background-color: #ffffcc }
 .c { color: #8f5902; font-style: italic } /* Comment */
@@ -712,3 +640,81 @@
 .vg { color: #000000 } /* Name.Variable.Global */
 .vi { color: #000000 } /* Name.Variable.Instance */
 .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+
+/* self defined */
+.container {
+    margin-top: 50px;
+}
+
+.container img {
+    width: 90%;
+    height: auto;
+    min-width: 200px;
+}
+
+#nav ul li {
+    display: inline;
+    margin: 0 20px 0 0;
+    font-size: 1.2em;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
+
+/* content styles, so headers etc are not hilariously large */
+.post h1 {
+    font-size: 24px;
+}
+.post h2 {
+    font-size: 18px;
+}
+.post h3 {
+    font-size:14px;
+}
+
+.post-title {
+    font-size: 24px;
+    color: #2C8437;
+}
+
+.post-meta {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.article-name {
+    font-size: 16px;
+    color: #2C8437;
+}
+
+.code {
+    font-family: "Source Code Pro", monospace;
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#logo {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #08457E;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo a:hover {
+    color: grey;
+}
+
+#header-border {
+    height: 5px;
+    background-color: black;
+}
