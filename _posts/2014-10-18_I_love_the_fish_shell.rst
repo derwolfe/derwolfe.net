@@ -72,16 +72,15 @@ To access the configuration utility, type
 
 	  fish_config
 
-This takes you to a page where the prompt can be chosen easily. I just use their **classic + git** choice.
+This takes you to a page where the prompt can be chosen easily. I just use the **classic + git** option.
 
 The other way is to edit the prompt directly.
-This can be done by editing the fish_prompt.fish file directely.
-It is conveniently saved in ~/.config/fish/functions.
+This can be done by editing the fish_prompt.fish file which is conveniently saved in ~/.config/fish/functions.
 
 Wrapping up
 ===========
 I love using fish because it doesn't surpise me.
 It has excellent user documentation, makes itpleasent to define new functions, and is extremely easy to reconfigure.
-If you haven't done so yet, I'd highly recommend giving fish a try; installation directions can be found at the `fish site`_.
+If you haven't done so yet, I'd highly recommend giving fish a try; installation directions can be found on the `fish homepage`_.
 
-.. _fish site: http://fishshell.com
+.. _fish homepage: http://fishshell.com
