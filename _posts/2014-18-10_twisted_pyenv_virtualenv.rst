@@ -3,11 +3,13 @@ title: Easy Twisted development with virtualenv and pyenv
 date: 2014-10-19
 ---
 
-This is meant as a bit of how to for programmers interested in developing the `Twisted networking library`.
-My goal is to explain how using virtuals and pyenv can simplify the process of working on Twisted.
+This is meant as a how-to for programmers interested in developing the `Twisted networking library`.
+My goal is to explain how using virtualenvs and pyenv can simplify the process of working on Twisted.
 
 Isolated environments simplify things
 =====================================
+XXX - this should be specific to Twisted!
+
 Most all operating systems come with a version of python pre-installed.
 However, as certain system libraries likely depend on this version of python, it can be wise to avoid depending on this version of python directly.
 Also, installing packages visible to your system python can be problematic.
