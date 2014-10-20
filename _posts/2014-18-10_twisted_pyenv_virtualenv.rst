@@ -22,12 +22,12 @@ A better approach is to create isolated environments in which dependencies can b
 When using a virtualenv,  pip installs dependencies into a location that is only visible to the virtualenv.
 Virtualenvs are wonderful because you can test out different versions of libraries without worring about accidentally upgrading a dependency that would affect another project.
 
-With python2, one needed to install the virtualenv application to be able to use it, in python3 it is baked in to the standard installation.
+With python 2, one needed to install the virtualenv application to be able to use it, in python3 it is baked in to the standard installation.
 However, the method I'm suggesting you use doesn't require you to install virtualenv yourself.
 
 By default, virtualenv is setup to target a specific python interpreter, normally the one that is available in your ``$PATH`` environment variable.
 This means that whatever python is in your path, is the python that will be used when creating your virtualenv.
-While this is helpful, tt only solves the problem of being able to install dependencies in an isolated environment.
+While this is helpful, it only solves the problem of being able to install dependencies in an isolated environment.
 It doesn't solve the problem of a user wanting to target a different interpreter that is installed on the host system.
 This is where pyenv comes in.
 
@@ -59,15 +59,14 @@ Luckily, there is a tool that makes it easy to create virtualenvs using your pye
 
 Pyenv-virtualenv
 ================
-`Pyenv-virtualenv`_ makes it easy to create virtualenvs that are paired to a specific python interpreter.
-With pyenv-virtualenv, the syntax for creating a new virtualenv pinned includes the interpreter as an argument.
+`Pyenv-virtualenv`_ allows you to create a virtualenv that will use a specific interpreter.
 
 .. code:: bash
 
 	  $ pyenv virtualenv 2.7.8 twisted278
 
 The command creates a new virtualenv named ``twisted278`` which uses the the ``python 2.7.8`` interpreter.
-If you wanted to create a new virtualenv for python3, without having python 3 installed, you would do the following.
+If you wanted to create a new virtualenv for python 3, without having python 3 installed, you would do the following.
 
 .. code:: bash
 
@@ -187,7 +186,7 @@ For python3, the tests are run using a small utility script saved inside of twis
 
 	  $ source ~/.pyenv/versions/twisted335/bin/activate
 	  (twisted335)$ cd ~/Code/twisted
-	  (twisted335)$ ./admin/run-python3-tests
+	  (twisted335)$ ./admin/run-python 3-tests
 
 Issues
 ======
@@ -215,7 +214,7 @@ If you notice any errors in this, please get in touch with `me`_.
 .. _Pyenv-virtualenv: https://github.com/yyuu/pyenv-virtualenv
 .. _project website: https://github.com/yyuu/pyenv#installation
 .. _Twisted networking library: https://www.twistedmatrix.com
-.. _Twisted porting process: https://twistedmatrix.com/trac/wiki/Plan/Python3
+.. _Twisted porting process: https://twistedmatrix.com/trac/wiki/Plan/Python 3
 .. _ticket #3696: https://twistedmatrix.com/trac/ticket/3696
 .. _Virtualenv-wrapper: http://virtualenvwrapper.readthedocs.org/en/latest/
 .. _me: http:/derwolfe.net/about/
