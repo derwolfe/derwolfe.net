@@ -88,7 +88,6 @@ Twisted relevancy
 =================
 As part of the `Twisted porting process`_, all Twisted code must be verified to work on python 2.6, python 2.7, and python 3.3.
 Using pyenv and virtualenv you can create a set of environments from which all of the tests can be run.
-Now, I will explain the setup process and how to run the tests for python2 and python3.
 
 If you are using a mac and have homebrew installed, installing pyenv and pyenv-virtualenv is extremely easy, simply do
 
@@ -98,7 +97,8 @@ If you are using a mac and have homebrew installed, installing pyenv and pyenv-v
 
 
 If you are using linux, you should follow the directions specified on the `project website`_.
-As of right now, you should install 2.6.9, 2.7.8 and 3.3.5.
+
+As of right now, you should install python interpreters 2.6.9, 2.7.8 and 3.3.5.
 This can be done with the following command
 
 .. code:: bash
