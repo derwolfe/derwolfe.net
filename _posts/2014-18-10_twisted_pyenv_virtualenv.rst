@@ -125,6 +125,8 @@ If you are using bash or zsh, you can run the activate script for each of the en
 
 Once you've activated the virtualenv, you can verify which interpreter is targeting using the following.
 
+.. code:: bash
+
 	  (twisted269)$ python -v
 	  Python 2.6.9
 	  (twisted269)$ which python
