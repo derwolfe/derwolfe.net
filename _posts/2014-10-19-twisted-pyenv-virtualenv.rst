@@ -207,8 +207,6 @@ Finishing up
 If you have gotten this far and followed the examples, you should have been able to create new virtualenvs that are pinned to specific interpreters.
 You should also have been able to run tests for twisted using these virtualenvs.
 
-If you notice any errors in this, please get in touch with `me`_.
-
 .. _Virtualenv: https://virtualenv.pypa.io/en/latest/virtualenv.html
 .. _Pyenv: https://github.com/yyuu/pyenv
 .. _Pyenv-virtualenv: https://github.com/yyuu/pyenv-virtualenv
@@ -217,4 +215,3 @@ If you notice any errors in this, please get in touch with `me`_.
 .. _Twisted porting process: https://twistedmatrix.com/trac/wiki/Plan/Python 3
 .. _ticket #3696: https://twistedmatrix.com/trac/ticket/3696
 .. _Virtualenv-wrapper: http://virtualenvwrapper.readthedocs.org/en/latest/
-.. _me: http:/derwolfe.net/about/
