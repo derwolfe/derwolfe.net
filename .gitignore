@@ -1,2 +1,6 @@
 _built
 twistd.pid
+.sass-cache
+.ruby-version
+_assets/css/derwolfe.css.map
+_assets/css/derwolfe.css
