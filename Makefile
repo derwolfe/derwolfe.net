@@ -6,7 +6,7 @@ all: build
 clean:
 	rm -rf $(OUTPUTDIR)
 
-build: clean
+build: clean css
 	mynt gen $(OUTPUTDIR)
 
 deploy: build
@@ -14,3 +14,9 @@ deploy: build
 
 serve:
 	twistd -n web --path $(OUTPUTDIR)
+
+css:
+	sass _assets/css/derwolfe.scss _assets/css/derwolfe.css
+
+.PHONY:
+	all clean build deploy serve css
