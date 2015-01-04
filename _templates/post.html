@@ -1,17 +1,17 @@
 {% extends "layout.html" %}
-
 {% set title = item.title ~ ' : Blog' %}
-
 {% block content %}
-<div class="post-title">{{ item.title }}</div>
-<div class="post-meta">Written on {{ item.date }}</div>
-
-<div class="post content">
+<article>
+  <section>
+    <div class="post-title">{{ item.title }}</div>
+    <div class="post-meta">Written on {{ item.date }}</div>
+  </section>
+  <section class="post-content">
     {{ item.content }}
-</div>
+  </section>
+<article>
 
 <div class="footer">
-  <hr />
-  <p>If you notice any errors or have any questions, please get in touch with me.  My contact details can be found <a href="{{ get_url('about') }}">here.</a></p>
+  <p>If you notice any errors or have any questions, please get in touch with me <a href="{{ get_url('about') }}">here.</a></p>
 </div>
 {% endblock %}

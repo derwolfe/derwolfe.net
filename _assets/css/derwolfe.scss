@@ -4,12 +4,23 @@
 @import "base/base";
 @import "neat/neat";
 
-/*
- * Needs
- * 1. navbar
- * 2. article page
- * 3. main page styles
- */
+$mobile: new-breakpoint(min-width 0px 4);
+$tablet: new-breakpoint(min-width 760px 8);
+
+.main {
+  background: grey;
+
+  @include media( $mobile ) {
+    @include span-columns(4);
+    background: white;
+  }
+
+  @include media( $tablet ) {
+    @include span-columns(8);
+    background: grey;
+    color: white;
+  }
+}
 
 /* nav */
 .centered-navigation {
@@ -266,10 +277,12 @@
     }
   }
 }
+
+
 /* end nav */
 
 
-/* pygments */
+/* pygments -- this could be a partial. */
 .hll { background-color: #ffffcc }
 .c { color: #8f5902; font-style: italic } /* Comment */
 .err { color: #a40000; border: 1px solid #ef2929 } /* Error */
