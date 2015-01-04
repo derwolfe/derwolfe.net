@@ -3,16 +3,16 @@
 {% block content %}
 <article class="type-system-rounded">
   <section>
-    <h1>{{ item.title }}</h2>
+    <h1>{{ item.title }}</h1>
     <p class="date">Written on {{ item.date }}</p>
     <hr/>
   </section>
   <section class="post-content">
     {{ item.content }}
   </section>
-<article>
 
-<div class="footer">
-  <p>If you notice any errors or have any questions, please get in touch with me <a href="{{ get_url('about') }}">here.</a></p>
-</div>
+  <div class="footer">
+    <p>If you notice any errors or have any questions, please get in touch with me <a href="{{ get_url('about') }}">here.</a></p>
+  </div>
+
 {% endblock %}
