@@ -2,13 +2,11 @@
 {% block title %}Writing{% endblock %}
 {% block content %}
 <section>
-  <div id="articles-list">
+  <div>
     {% for post in posts %}
-    <div class="row">
       <article>
-	<span class="article-date"><time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time></span> - <span class="article-name"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></span>
+	<p><time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time> - <a href="{{ get_url(post.url) }}">{{ post.title }}</a></p>
       </article>
-    </div>
   {% endfor %}
   </div>
 </section>

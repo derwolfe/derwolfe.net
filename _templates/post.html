@@ -7,12 +7,16 @@
     <p class="date">Written on {{ item.date }}</p>
     <hr/>
   </section>
-  <section class="post-content">
+
+  <div class="post-content">
     {{ item.content }}
-  </section>
+  </div>
 
   <div class="footer">
+    <!-- this needs a border-top -->
     <p>If you notice any errors or have any questions, please get in touch with me <a href="{{ get_url('about') }}">here.</a></p>
   </div>
+
+</article>
 
 {% endblock %}

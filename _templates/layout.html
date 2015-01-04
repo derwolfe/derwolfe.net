@@ -60,9 +60,11 @@
       </ul>
     </div>
   </header>
-  <div class="main">
-    {% block content %}{% endblock %}
-  </div>
+
+  <section>
+  {% block content %}{% endblock %}
+  </section>
+
   <script>
     $(document).ready(function() {
 	$('#js-centered-navigation-menu').removeClass("show");

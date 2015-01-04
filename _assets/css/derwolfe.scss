@@ -1,12 +1,11 @@
 @charset "utf-8";
 
+// bourbon imports
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
 
-$visual-grid: true;
-
-
+// project specific imports
 @import "navbar";
 @import "pygments";
 @import "articles";
@@ -15,21 +14,9 @@ $visual-grid: true;
 .container {
     @include outer-container;
 
-    $mobile: new-breakpoint(max-width 500px 4);
-    $large-screen: new-breakpoint(min-width 501px 8);
+    $mobile: new-breakpoint(max-width 500px 2);
+    $large-screen: new-breakpoint(min-width 501px 2);
+
     max-width: em(750);
     min-width: em(500);
-
-    .main {
-	@include media( $mobile ) {
-	    @include span-columns(4);
-	    background: white;
-	}
-
-	@include media( $large-screen ) {
-	    @include span-columns(8);
-	    background: #D0D0D0;
-	    color: black;
-	}
-    }
 }
