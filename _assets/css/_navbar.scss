@@ -1,7 +1,7 @@
 .centered-navigation {
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #D0D0D0;
+  $centered-navigation-background: #708090;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
@@ -13,7 +13,7 @@
 
   background-color: $centered-navigation-background;
   border-bottom: 1px solid darken($centered-navigation-background, 6);
-  font-family: $serif;
+  font-family: $sans-serif;
   min-height: $centered-navigation-height;
   width: 100%;
   z-index: 9999;
