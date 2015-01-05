@@ -1,0 +1,8 @@
+@import "neat/neat-helpers";
+
+$min-width-val: 500px;
+$max-width-val: 750px;
+
+// Define your breakpoints
+$mobile: new-breakpoint(max-width em($min-width-val));
+$large-screen: new-breakpoint(min-width em($min-width-val) + 1);

@@ -24,7 +24,7 @@
 
   <!-- JS
        ================================================== -->
-  <script src="{{ get_asset('js/jquery-1.11.2.min.js') }}"/>
+  <script src="{{ get_asset('js/jquery-1.11.2.min.js') }}"></script>
 
   <!-- fonts -->
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
@@ -47,38 +47,25 @@
     ga('create', 'UA-41763159-1', 'auto');
     ga('send', 'pageview');
   </script>
-
 </head>
 
 <body class="container">
-  <header class="centered-navigation">
-    <div class="centered-navigation-wrapper">
-      <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">derwolfe.net // Menu</a>
-      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-	<li class="nav-link"><a href="/">Articles</a></li>
-	<li class="nav-link"><a href="{{ get_url('about') }}">About Me</a></li>
-      </ul>
-    </div>
-  </header>
 
-  <section>
-  {% block content %}{% endblock %}
-  </section>
+  <aside>
+    <header class="navigation">
+      <div class="centered-navigation-wrapper">
+	<a href="javascript:void(0)">derwolfe.net</a>
+	<ul>
+	  <li class="nav-link"><a href="/">Articles</a></li>
+	  <li class="nav-link"><a href="{{ get_url('about') }}">About Me</a></li>
+	</ul>
+      </div>
+    </header>
+  </aside>
 
-  <script>
-    $(document).ready(function() {
-	$('#js-centered-navigation-menu').removeClass("show");
-
-	$('#js-centered-navigation-mobile-menu').on('click', function(e) {
-	    e.preventDefault();
-	    $('#js-centered-navigation-menu').slideToggle(function(){
-		if($('#js-centered-navigation-menu').is(':hidden')) {
-		    $('#js-centered-navigation-menu').removeAttr('style');
-		}
-	    });
-	});
-    });
-  </script>
+  <div class="articles">
+    {% block content %}{% endblock %}
+  </div>
 
 </body>
 </html>

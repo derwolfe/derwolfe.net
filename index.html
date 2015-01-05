@@ -5,7 +5,8 @@
   <div>
     {% for post in posts %}
       <article>
-	<p><time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time> - <a href="{{ get_url(post.url) }}">{{ post.title }}</a></p>
+	<p>
+	  <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time> - <a href="{{ get_url(post.url) }}">{{ post.title }}</a></p>
       </article>
   {% endfor %}
   </div>

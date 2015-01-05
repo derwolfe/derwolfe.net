@@ -3,7 +3,10 @@
 // bourbon imports
 @import "bourbon/bourbon";
 @import "base/base";
+@import "grid-settings";
+
 @import "neat/neat";
+
 
 // project specific imports
 @import "navbar";
@@ -14,9 +17,14 @@
 .container {
     @include outer-container;
 
-    $mobile: new-breakpoint(max-width 500px 2);
-    $large-screen: new-breakpoint(min-width 501px 2);
+    @include media($mobile) {
+	@include span-columns(4);
+	aside { @include span-columns(4); }
+	div.article { @include span-columns(4); }
+    };
 
-    max-width: em(750);
-    min-width: em(500);
+    @include media($large-screen) {
+	aside { @include span-columns(2); }
+	div.articles { @include span-columns(8); }
+    };
 }
