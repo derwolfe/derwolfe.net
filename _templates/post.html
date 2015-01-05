@@ -1,18 +1,19 @@
 {% extends "layout.html" %}
 {% set title = item.title ~ ' : Blog' %}
 {% block content %}
-<article class="type-system-rounded">
+<article>
   <section>
     <h1>{{ item.title }}</h1>
     <p class="date">Written on {{ item.date }}</p>
-    <hr/>
+    <hr />
   </section>
 
   <div class="post-content">
     {{ item.content }}
   </div>
 
-  <div class="footer">
+  <div>
+    <hr />
     <!-- this needs a border-top -->
     <p>If you notice any errors or have any questions, please get in touch with me <a href="{{ get_url('about') }}">here.</a></p>
   </div>
