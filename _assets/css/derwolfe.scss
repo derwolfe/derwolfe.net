@@ -18,13 +18,12 @@
     @include outer-container;
 
     @include media($mobile) {
-	@include span-columns(4);
-	aside { @include span-columns(4); }
-	div.article { @include span-columns(4); }
+	aside { @include span-columns(12); }
+	div.articles { @include span-columns(12); }
     };
 
     @include media($large-screen) {
 	aside { @include span-columns(2); }
-	div.articles { @include span-columns(8); }
+	div.articles { @include span-columns(10); }
     };
 }

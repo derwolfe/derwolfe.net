@@ -1,4 +1,4 @@
-S3_BUCKET=derwolfe.net
+S3_BUCKET=www.derwolfe.net
 OUTPUTDIR=./_built
 
 all: build
