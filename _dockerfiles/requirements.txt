@@ -1,5 +1,0 @@
-pem
-service_identity
-cryptography>=0.3.0
-PyOpenSSL>=0.14.0
-Twisted>=14.0.0
