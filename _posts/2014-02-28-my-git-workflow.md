@@ -1,4 +1,8 @@
----layout: post.html title: My git workflow date: 2014-02-28 ---
+---
+layout: post.html
+title: My git workflow - updated March 4, 2015
+date: 2014-02-28
+---
 
 git is excellent. It keeps me sane.
 ===================================
@@ -33,68 +37,43 @@ branch name with a specific purpose seems to help reign in
 do-all/fix-all type branches. It seems to at least make the developer
 cognizant of the fact that the current branch has a *specific* purpose.
 
-Updated March 6, 2014
+2.Preserve ALL history when merging feature branches
+===================================================
 
-I know longer believe that squashing and rebasing is the correct
-strategy to use. Even though your history might contain a large number
-of warts, it is history that can show what you may have experimented
-with while developing. This information can be valuable to other
-developers looking through your code as it can help them to avoid trying
-the same experiments. By keeping the dirty, ugly history intact,
-developers new to your source code are provided with context in which to
-view the code in front of them. If one would like to describe a set of
-changes as a single unit, a merge commit can handle this.
+*Updated March 6, 2014*
 
-~~2. Squash/rebase when merging feature branches~~
-~~==============================================~~
-~~~~
-~~When you are ready to merge a branch, squash the commits of this branch~~
-~~into a single descriptive commit. First, use the following command to~~
-~~stage the files for the merge.~~
-~~~~
-~~``` {.sourceCode .sh}~~
-~~git commit --squash merge feature_branch~~
-~~```~~
-~~~~
-~~Then type~~
-~~~~
-~~``` {.sourceCode .sh}~~
-~~git commit~~
-~~```~~
-~~~~
-~~to write the actual commit message.~~
-~~~~
-~~This single commit should contain a subject that states the point of the~~
-~~branch. What problem does the branch solve? The body of the message~~
-~~should describe what each logical unit of the new feature does. If there~~
-~~have been changes to several semi-related changes to the codebase,~~
-~~describe why they have changed.~~
-~~~~
-~~An example commit message would be:~~
-~~~~
-~~``` {.sourceCode .}~~
-~~Consolidate search string creation into single module~~
-~~
-~~Instead of having multiple search objects that take either~~
-~~position, budget, or actual objects and translate them into~~
-~~strings, use a single function that can parse each of these~~
-~~objects using their attributes.~~
-~~
-~~The previous method violated DRY pretty badly. There were~~
-~~three seperate record parsers, {Actual, Position, Budget}Parser~~
-~~that all did the same exact thing.~~
-~~```~~
-~~
-~~The idea in writing commit messages is to preserve the reasons for~~
-~~having changed or written new code.~~
-~~
-~~Writing a commit consisting only of~~
-~~
-~~``` {.sourceCode .}~~
-~~Merged branch 'fix stuff'~~
-~~```~~
-~~
-~~doesn't tell another developer anything about **why** changes were made.~~
+I no longer believe that squashing and rebasing is the correct
+strategy to use when mergining in new code.
+
+Even though your history might contain a large number
+of warts, it is a representation of facts that represent the history of a
+features development over time. While `oops` commits might produce noise,
+they can help provide knowledge about *why* a feature was developed the way
+that it was. Further, if a feature has long development history, it can
+signal that there was great difficulty in developing the feature.
+
+By keeping the dirty, ugly history intact, developers new to your source code
+are provided with an accurate historical context through which they can view
+your code.
+
+Rebasing effectively rewrites and deletes the history of development.
+Rebasing's goal is to condense the repository into atomic simple sets of
+changes, e.g.
+
+```
+        t3 - fixed a because of b breaking a
+        t2 - added b
+        t1 - added a
+
+```
+While this seems useful, it makes it impossible to tell how these changes were
+enacted. While this makes it easier to see when feature was introduced, it doesn't help one track down why a change was introduced. Understanding *why*
+a piece of software was designed the way that is can make tracking down bugs
+simpler.
+
+Instead of rebasing and squashing branches into single commits,
+keep your development history intact and just use `git merge`.
+
 
 3. Newly merged feature branches require tests
 ==============================================
