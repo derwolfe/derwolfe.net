@@ -6,7 +6,7 @@ SSH_TARGET_DIR=/var/www/derwolfe.net/html/
 
 .PHONY: clean build deploy rsync_upload serve
 
-all: build
+all: build serve
 
 clean:
 	rm -rf $(OUTPUTDIR)
