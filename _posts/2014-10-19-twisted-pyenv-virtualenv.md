@@ -178,10 +178,10 @@ $ echo "zope.interface" > requirements.txt
 $ pip install -r requirements.txt
 ```
 
-**Shameless plug** - if you'd like Twisted to use the extra\_requires
+**Shameless plug** - ~~if you'd like Twisted to use the extra\_requires
 syntax available from setuptools to install optional dependencies, you
-could review [ticket
-\#3696](https://twistedmatrix.com/trac/ticket/3696)!
+could review [ticket #3696](https://twistedmatrix.com/trac/ticket/3696)!~~
+It was merged in Twisted 15.1. Yay!
 
 To install the dependencies listed in the requirements.txt file, execute
 the following commands in each virtualenv.
