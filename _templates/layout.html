@@ -48,23 +48,23 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="four columns">
+  <div id="main">
+    <section>
       <span id="logo"><a href="/">Chris Wolfe</a></span>
-    </div>
-    <div class="twelve columns" id="nav">
+    </section>
+    <section id="nav">
       <nav>
 	<ul>
 	  <li><a href="/">Blog</a></li>
 	  <li><a href="{{ get_url('about') }}">About</a>
 	</ul>
       </nav>
-    </div>
+    </section>
 
-    <div class="ten columns">
+    <section id="content">
       <hr />
       {% block content %}{% endblock %}
-    </div>
+    </section>
 
   </div>
 </body>
