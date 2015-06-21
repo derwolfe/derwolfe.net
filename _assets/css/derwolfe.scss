@@ -1,0 +1,16 @@
+@import "libraries/bourbon/bourbon.scss";
+@import "libraries/neat/neat.scss";
+
+
+$base-border-color: black;
+$max-width: em(700);
+$mobile: new-breakpoint(min-width 0px 4);
+$tablet: new-breakpoint(min-width 760px 8);
+
+#main {
+    @include outer-container;
+}
+
+
+@import "partials/nav";
+@import "partials/footer";
