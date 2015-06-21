@@ -2,4 +2,6 @@
   @include outer-container;
   aside { @include span-columns(3); }
   article { @include span-columns(9); }
+
+  ol { list-style: none; }
 }
