@@ -52,17 +52,18 @@
     <section>
       <span id="logo"><a href="/">Chris Wolfe</a></span>
     </section>
+
     <section id="nav">
       <nav>
 	<ul>
 	  <li><a href="/">Blog</a></li>
-	  <li><a href="{{ get_url('about') }}">About</a>
+          <li><a href="https://github.com/derwolfe">Github</li>
+	  <li><a href="{{ get_url('about') }}">About</a></li>
 	</ul>
       </nav>
     </section>
 
     <section id="content">
-      <hr />
       {% block content %}{% endblock %}
     </section>
 
