@@ -11,6 +11,12 @@ $tablet: new-breakpoint(min-width 760px 8);
     @include outer-container;
 }
 
+img {
+    width:100%;
+    max-width:$max-width;
+}
+
 
 @import "partials/nav";
 @import "partials/footer";
+@import "partials/content";
