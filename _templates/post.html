@@ -3,15 +3,13 @@
 {% set title = item.title ~ ' : Blog' %}
 
 {% block content %}
-<div class="post-title">{{ item.title }}</div>
-<div class="post-meta">Written on {{ item.date }}</div>
-
-<div class="post content">
+<article>
+  <header>
+    <h2>{{ item.title }}</h2>
+    <p>Written on {{ item.date }}</p>
+  </header>
+  <div>
     {{ item.content }}
-</div>
-
-<div class="footer">
-  <hr />
-  <p>If you notice any errors or have any questions, please get in touch with me.  My contact details can be found <a href="{{ get_url('about') }}">here.</a></p>
-</div>
+  </div>
+</article>
 {% endblock %}
