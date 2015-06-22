@@ -1,3 +1,2 @@
 gem 'bourbon'
 gem 'neat'
-gem 'font-awesome-sass'
