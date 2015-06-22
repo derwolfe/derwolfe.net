@@ -6,7 +6,7 @@
 <article>
   <header>
     <h2>{{ item.title }}</h2>
-    <p>Written on {{ item.date }}</p>
+    <p>Written on {{ item.timestamp | date('%B %d, %Y') }}</p>
   </header>
   <div>{{ item.content }}</div>
 </article>
