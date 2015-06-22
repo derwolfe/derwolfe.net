@@ -21,12 +21,13 @@ domain: derwolfe.net
 #
 
 # Used in header meta tags and the site feed. (required to generate a valid feed)
-author: Chris Wolfe 
+author: Chris Wolfe
 # A description of your site to be used in header meta tags.
-description: 
+description:
 # Used in the site feed.
 email: chris@derwolfe.net
 # Your site's subtitle.
 #subtitle: subtitle
 # Your site's title. (required to generate a valid feed)
-title: Chris Wolfe 
+title: Chris Wolfe
+date_format: '%B %d, %Y'

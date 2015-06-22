@@ -1,0 +1,12 @@
+#{$all-buttons} {
+  background-color: #f00;
+}
+
+#{$all-buttons-focus},
+#{$all-buttons-hover} {
+  background-color: red;
+}
+
+#{$all-buttons-active} {
+  background-color: black;
+}
