@@ -1,8 +1,6 @@
 .footer {
   $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
+  $action-color: #505c6d !default;
   $footer-background: desaturate(darken($action-color, 20%), 30%);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
@@ -20,13 +18,6 @@
     &:hover {
       color: transparentize($footer-color, 0);
     }
-  }
-
-  h3 {
-    color: $footer-color;
-    font-size: 1em;
-    font-weight: 800;
-    margin-bottom: 0.4em;
   }
 
   p {

@@ -1,12 +1,6 @@
-#{$all-buttons} {
-  background-color: #f00;
-}
-
-#{$all-buttons-focus},
-#{$all-buttons-hover} {
-  background-color: red;
-}
-
-#{$all-buttons-active} {
-  background-color: black;
+.button {
+    // This will create a purple button
+    @include bbb_flat_style(red, white); // Ooooh flat style OTB!
+    @include bbb_size(0.75); // I would like it bigger than usual please
+    border-radius: 0;
 }
