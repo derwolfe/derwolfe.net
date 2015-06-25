@@ -7,6 +7,9 @@ $max-width: em(700);
 
 #main {
     @include outer-container;
+    display: flex;
+    min-height: 75vh;
+    flex-direction: column;
 }
 
 img {

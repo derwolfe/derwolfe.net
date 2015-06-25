@@ -1,4 +1,5 @@
 .footer {
+  flex: 1;
   $base-spacing: 1.5em !default;
   $action-color: #505c6d !default;
   $footer-background: desaturate(darken($action-color, 20%), 30%);
