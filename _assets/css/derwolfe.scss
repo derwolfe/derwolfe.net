@@ -5,6 +5,11 @@
 $base-border-color: black;
 $max-width: em(700);
 
+body {
+    background: #f0f0f0;
+}
+
+
 #main {
     @include outer-container;
     display: flex;
