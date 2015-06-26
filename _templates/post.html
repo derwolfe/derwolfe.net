@@ -3,9 +3,9 @@
 {% set title = item.title ~ ' : Blog' %}
 
 {% block content %}
-<article>
+<article class="type-system-slab">
   <header>
-    <h2>{{ item.title }}</h2>
+    <h1>{{ item.title }}</h1>
     <p>Written on {{ item.timestamp | date('%B %d, %Y') }}</p>
   </header>
   <div>{{ item.content }}</div>
