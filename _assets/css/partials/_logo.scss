@@ -2,7 +2,7 @@
       font-family: 'Lato';
       text-align: center;
       /* border-bottom: solid em(5) green; */
-
+      border-bottom: 3px solid $base-border-color;
       p {
          font-size: em(50);
          letter-spacing: em(-0.5);

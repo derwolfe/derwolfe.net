@@ -18,6 +18,7 @@
   <!-- CSS
        ================================================== -->
   <link rel="stylesheet" href="{{ get_asset('css/derwolfe.css') }}">
+  <link rel="stylesheet" href="{{ get_asset('css/hint.min.css') }}">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -50,31 +51,33 @@
 
 <body>
   <div id="main">
-    <section id="logo">
-      <p>Hi, I'm Chris Wolfe</p>
-    </section>
-
     <section id="nav">
       <nav>
 	<ul>
 	  <li>
-            <a class="button big" title="Articles" href="/">
+            <a class="button hint--bottom" title="Articles" data-hint="All Articles" href="/">
               <i class="fa fa-align-justify"></i>
             </a>
           </li>
           <li>
-            <a class="button" title="Github" href="https://github.com/derwolfe">
+            <a class="button hint--bottom" title="Github" data-hint="My Github" href="https://github.com/derwolfe">
               <i class="fa fa-github-square"></i>
             </a>
           </li>
 	  <li>
-            <a class="button" title="Feed" href="/feed.xml">
+            <a class="button hint--bottom" title="Feed" data-hint="RSS feed" href="/feed.xml">
               <i class="fa fa-rss"></i>
             </a>
           </li>
 	</ul>
       </nav>
     </section>
+
+    <section id="logo">
+      <p>Hi, I'm Chris Wolfe</p>
+    </section>
+
+
 
     <section>
       {% block content %}{% endblock %}

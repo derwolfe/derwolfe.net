@@ -1,18 +1,16 @@
 nav {
-  border-top: 1px solid $base-border-color;
-  border-bottom: 1px solid $base-border-color;
-  /*margin: em(30) 0;*/
-  text-align: center;
+    /*margin: em(30) 0;*/
+    text-align: center;
 
-  ul {
-    display: inline-block;
-    list-style: none;
-    margin-bottom: em(10);
-  }
+    ul {
+        display: inline-block;
+        list-style: none;
+        margin-bottom: em(10);
+    }
 
-  li {
-    display: inline;
-    list-style-type: none;
-    padding-right: em(20);
-  }
+    li {
+        display: inline;
+        list-style-type: none;
+        padding-right: em(20);
+    }
 }
