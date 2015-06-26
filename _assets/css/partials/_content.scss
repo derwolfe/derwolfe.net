@@ -1,9 +1,3 @@
-article {
-    header {
-        text-align: center;
-    }
-}
-
 article.type-system-slab {
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
@@ -18,6 +12,10 @@ article.type-system-slab {
 
   @include clearfix;
   text-align: left;
+
+  header {
+      text-align: center;
+  }
 
   h1, h2, h3, p {
     margin: 0;
