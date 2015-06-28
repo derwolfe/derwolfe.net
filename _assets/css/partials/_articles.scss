@@ -1,5 +1,16 @@
 #articles {
-    aside { @include span-columns(3); }
-    article { @include span-columns(9); }
-    ol { list-style: none; }
+    ol {
+        list-style: none;
+        padding: em(0);
+        margin: em(5) 0 0 0;
+    }
+
+    li {
+        margin: em(5) 0 0 0;
+        border-top: solid 2px black;
+
+        @include outer-container;
+        aside { @include span-columns(3); }
+        article { @include span-columns(9); }
+    }
 }
