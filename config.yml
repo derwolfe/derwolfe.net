@@ -31,3 +31,4 @@ email: chris@derwolfe.net
 # Your site's title. (required to generate a valid feed)
 title: Chris Wolfe
 date_format: '%B %d, %Y'
+pygmentize: True

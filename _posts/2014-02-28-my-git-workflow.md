@@ -100,7 +100,7 @@ The solution: delete the feature branch once merged.
 
 There are multiple ways to delete remote branches and tags. I use:
 
-``` {.sourceCode .sh}
+```console
 # delete remote tags
 git push origin :refs/tags/<tag-name>
 
@@ -110,6 +110,6 @@ git push origin :<feature-branch>
 
 To delete from the local repository after the merge:
 
-``` {.sourceCode .sh}
+```console
 git branch -D <feature-branch>
 ```

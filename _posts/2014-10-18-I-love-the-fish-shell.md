@@ -1,7 +1,7 @@
 ---
-layout: post.html 
-title: I love the fish shell 
-date: 2014-10-18 
+layout: post.html
+title: I love the fish shell
+date: 2014-10-18
 ---
 
 I have been using the fish shell for the past six months and have been
@@ -40,7 +40,7 @@ fish also uses a sane and simple configuration language in which paths
 can be set easily. For example, here is my fish.config file in which
 I've setup pyenv, homebrew and the default paths.
 
-``` {.sourceCode .sh}
+```console
 set default_path /usr/bin /usr/sbin /bin /sbin
 set homebrew /usr/local/bin /usr/local/sbin
 set brew_pyenv /usr/local/var/pyenv/shims
@@ -55,7 +55,7 @@ it easy to both create and update functions. `funced` is the in-shell
 editor and I have found it to be indespenible. To edit any function
 attached to the fish shell, you just type
 
-``` {.sourceCode .bash}
+```console
 funced function_name
 ```
 
@@ -64,7 +64,7 @@ place. New functions can be defined using `funced` as well. To save a
 function permanently; that is longer than the life of your current
 shell, funcsave needs to be used:
 
-``` {.sourceCode .bash}
+```console
 funcsave function_name
 ```
 
@@ -87,7 +87,7 @@ prompt is to open up the web-based configuration utility. I'm normally
 not a fan of using web configurations, bit fish's is simple and
 straigtforward. To access the configuration utility, type
 
-``` {.sourceCode .bash}
+```console
 fish_config
 ```
 

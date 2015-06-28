@@ -1,7 +1,7 @@
 ---
-layout: post.html 
-title: Easy Twisted development with virtualenv and pyenv 
-date: 2014-10-19 
+layout: post.html
+title: Easy Twisted development with virtualenv and pyenv
+date: 2014-10-19
 ---
 
 This is meant as a how-to for programmers
@@ -67,7 +67,7 @@ $ pyenv install pypy-2.4.0
 Once this command completes, pypy-2.4.0 will be installed. You can
 access a new pypy shell by typing
 
-``` {.sourceCode .bash}
+```console
 $ pyenv shell pypy-2.4.0
 ```
 
@@ -84,7 +84,7 @@ Pyenv-virtualenv
 [Pyenv-virtualenv](https://github.com/yyuu/pyenv-virtualenv) allows you
 to create a virtualenv that will use a specific interpreter.
 
-``` {.sourceCode .bash}
+```console
 $ pyenv virtualenv 2.7.8 twisted278
 ```
 
@@ -93,7 +93,7 @@ the `python 2.7.8` interpreter. If you wanted to create a new virtualenv
 for python 3, without having python 3 installed, you would do the
 following.
 
-``` {.sourceCode .bash}
+```console
 # find the python version you'd like to install
 $ pyenv install -l
 
@@ -120,7 +120,7 @@ environments from which all of the tests can be run.
 If you are using a mac and have homebrew installed, installing pyenv and
 pyenv-virtualenv is extremely easy, simply do
 
-``` {.sourceCode .bash}
+```console
 $ brew install pyenv pyenv-virtualenv
 ```
 
@@ -130,7 +130,7 @@ the [project website](https://github.com/yyuu/pyenv#installation).
 As of right now, you should install python interpreters 2.6.9, 2.7.8 and
 3.3.5. This can be done with the following command
 
-``` {.sourceCode .bash}
+```console
 $ pyenv install 2.6.9 2.7.8 3.3.5
 ```
 
@@ -138,7 +138,7 @@ Once these have installed successfully, you can create the virtualenvs
 using the following commands. It does not matter in what directory these
 commands are executed.
 
-``` {.sourceCode .bash}
+```console
 $ pyenv virtualenv 2.6.9 twisted269
 $ pyenv virtualenv 2.7.8 twisted278
 $ pyenv virtualenv 3.3.5 twisted335
@@ -151,14 +151,14 @@ example, is stored in \~/Code/twisted. If you are using bash or zsh, you
 can run the activate script for each of the environments using the
 following command
 
-``` {.sourceCode .bash}
+```console
 $ source ~/.pyenv/versions/twisted269/bin/activate
 ```
 
 Once you've activated the virtualenv, you can verify which interpreter
 is targeting using the following.
 
-``` {.sourceCode .bash}
+```console
 (twisted269)$ python -v
 Python 2.6.9
 (twisted269)$ which python
@@ -186,7 +186,7 @@ It was merged in Twisted 15.1. Yay!
 To install the dependencies listed in the requirements.txt file, execute
 the following commands in each virtualenv.
 
-``` {.sourceCode .bash}
+```console
 $ cd ~/Code/twisted
 $ echo "zope.interface" > requirements.txt
 
@@ -215,7 +215,7 @@ having to constantly activate and deactivate virtualenvs.
 
 To run the tests for python 2, you just enter the following
 
-``` {.sourceCode .bash}
+```console
 $ source ~/.pyenv/versions/twisted269/bin/activate
 (twisted269)$ cd ~/Code/twisted
 (twisted269)$ ./bin/trial twisted
@@ -226,7 +226,7 @@ The same goes for python 2.7.8.
 For python3, the tests are run using a small utility script saved inside
 of twisted/admin.
 
-``` {.sourceCode .bash}
+```console
 $ source ~/.pyenv/versions/twisted335/bin/activate
 (twisted335)$ cd ~/Code/twisted
 (twisted335)$ ./admin/run-python 3-tests
@@ -243,7 +243,7 @@ shell and have defined a function to activate virtualenvs. The sad part
 about the fish function is that is it only works with pyenvs that
 provide an activate.fish command. Here is the code:
 
-``` {.sourceCode .bash}
+```console
 function actenv --description 'activate the virtualenv with the given name'
    . ~/.pyenv/versions/$argv/bin/activate.fish
 end
