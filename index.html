@@ -5,13 +5,15 @@
   <ol>
     {% for post in posts %}
     <li>
-      <aside>
-        <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">
-          {{ post.timestamp | date('%B %d, %Y') }}</time>
-      </aside>
-      <article>
-        <a href="{{ get_url(post.url) }}">{{ post.title }}</a>
-      </article>
+      <a href="{{ get_url(post.url) }}" title="{{ post.title }}">
+        <aside>
+          <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">
+            {{ post.timestamp | date('%B %d, %Y') }}</time>
+        </aside>
+        <article>
+          {{ post.title }}
+        </article>
+      </a>
     </li>
     {% endfor %}
   </ol>
