@@ -1,32 +1,36 @@
 .footer {
-  flex: 1;
-  $base-spacing: 1.5em !default;
-  $action-color: #505c6d !default;
-  $footer-background: desaturate(darken($action-color, 20%), 30%);
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
-  background: $footer-background;
-  padding: ($base-spacing * 2) $gutter;
-  width: 100%;
+    $base-spacing: 1.5em !default;
+    $action-color: #505c6d !default;
+    $footer-background: desaturate(darken($action-color, 20%), 30%);
+    $footer-color: white;
+    $footer-link-color: transparentize($footer-color, 0.6);
+    $footer-disclaimer-color: transparentize($footer-color, 0.6);
+    $serif: 'Roboto Slab', serif;
 
- a {
-    color: $footer-link-color;
-    text-decoration: none;
+    font-family: $serif;
+    background: $footer-background;
+    padding: ($base-spacing * 2) $gutter;
+    width: 100%;
+    height: em(150);
+    flex: 1;
 
-    &:focus,
-    &:hover {
-      color: transparentize($footer-color, 0);
+    a {
+        color: $footer-link-color;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            color: transparentize($footer-color, 0);
+        }
     }
-  }
 
-  p {
-    color: $footer-disclaimer-color;
-    font-size: 0.9em;
-    line-height: 1.5em;
-    margin: auto;
-    max-width: 35em;
-    text-align: center;
-  }
+    p {
+        color: $footer-disclaimer-color;
+        font-size: 0.9em;
+        line-height: 1.5em;
+        margin: auto;
+        max-width: 35em;
+        text-align: center;
+    }
 }

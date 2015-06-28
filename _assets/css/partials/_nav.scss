@@ -1,6 +1,8 @@
 #nav {
     text-align: center;
+    $serif: 'Roboto Slab', serif;
 
+    font-family: $serif;
     ul {
         list-style: none;
         padding-left: em(0);
