@@ -1,16 +1,31 @@
 #articles {
+    $button-color: #32CD32;
+    $hover-color: transparentize($button-color, 0.6);
+    $sans-serif: 'Open Sans', sans-serif;
+    font-family: $sans-serif;
+
     ol {
         list-style: none;
-        padding: em(0);
-        margin: em(5) 0 0 0;
+        padding: 0;
     }
 
     li {
-        margin: em(5) 0 0 0;
         border-top: solid 2px black;
+    }
 
-        @include outer-container;
-        aside { @include span-columns(3); }
-        article { @include span-columns(9); }
+    a {
+        padding-left: em(5);
+        color: black;
+        text-decoration: none;
+        display: block;
+        line-height: em(50);
+    }
+
+    a:hover {
+        background-color: $hover-color;
+    }
+
+    .article-date {
+        font-style: italic;
     }
 }
