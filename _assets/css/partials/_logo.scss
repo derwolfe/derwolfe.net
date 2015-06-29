@@ -1,10 +1,12 @@
 #logo {
-      font-family: 'Lato';
-      text-align: center;
+    font-family: 'Lato';
+    text-align: center;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 
-      p {
-         font-size: em(50);
-         letter-spacing: em(-0.5);
-         line-height: 0.4;
-      }
+    p {
+        font-size: em(40);
+        letter-spacing: em(-0.5);
+        line-height: 0.4;
+    }
 }

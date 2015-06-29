@@ -8,7 +8,8 @@
       <a href="{{ get_url(post.url) }}" title="{{ post.title }}">
         <aside>
           <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">
-            {{ post.timestamp | date('%B %d, %Y') }}</time>
+            {{ post.timestamp | date('%B %d, %Y') }}
+          </time>
         </aside>
         <article>
           {{ post.title }}
