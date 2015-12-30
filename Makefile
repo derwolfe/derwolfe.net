@@ -1,4 +1,5 @@
 OUTPUTDIR=./_built
+CSSDIR=$(OUTPUTDIR)/assets/css
 SSH_USER=web
 SSH_PORT=2290
 SSH_HOST=104.236.89.60
@@ -13,6 +14,10 @@ clean:
 
 build: clean
 	mynt gen $(OUTPUTDIR)
+	rm -rf $(CSSDIR)
+	mkdir $(CSSDIR)
+	sass ./_assets/css/derwolfe.scss > $(CSSDIR)/derwolfe.css
+	cp ./_assets/css/hint.min.css $(CSSDIR)
 
 deploy: build rsync_upload
 
@@ -23,4 +28,4 @@ sshin:
 	ssh -p ${SSH_PORT} ${SSH_USER}@${SSH_HOST}
 
 serve:
-	twistd -n web --path $(OUTPUTDIR)
+	twistd -n web -p 8181 --path $(OUTPUTDIR)
